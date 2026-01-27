@@ -1,0 +1,35 @@
+{
+  "name": "@bmad-method/short-drama-production",
+  "version": "1.1.0",
+  "description": "Short Drama Production expansion pack for BMad Method - Vertical screen storytelling, viral formulas, and AI video generation tools",
+  "main": "index.js",
+  "keywords": [
+    "bmad-method",
+    "expansion-pack",
+    "short-drama",
+    "vertical-screen",
+    "viral-hooks",
+    "vidu",
+    "sora",
+    "scriptwriting",
+    "creative-writing",
+    "storytelling"
+  ],
+  "author": "Wes",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wanghaisheng/bmad-short-drama-production"
+  },
+  "bmadExpansion": {
+    "type": "expansion-pack",
+    "category": "creative",
+    "agents": 14,
+    "workflows": 10,
+    "templates": 11,
+    "checklists": 35
+  },
+  "peerDependencies": {
+    "bmad-method": ">=1.0.0"
+  }
+}

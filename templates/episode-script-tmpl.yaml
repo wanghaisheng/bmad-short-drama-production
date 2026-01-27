@@ -1,0 +1,24 @@
+title: Vertical Episode Script
+episode: {{episode_number}}
+duration: "60 seconds"
+
+scene_1:
+  location: "Luxury Office"
+  characters: ["CEO", "Secretary"]
+  action: "CEO throws papers in air."
+  dialogue:
+    CEO: "Get out! You're fired!"
+    Secretary: "But sir, I'm pregnant."
+  camera: "Low angle dolly up."
+
+scene_2:
+  location: "Hallway"
+  characters: ["Secretary", "Rival"]
+  action: "Rival smirks."
+  dialogue:
+    Rival: "Finally."
+
+cliffhanger:
+  action: "Secretary receives a call."
+  line: "Hello? Yes, I am the heiress."
+  visual: "Zoom into shocked eyes."

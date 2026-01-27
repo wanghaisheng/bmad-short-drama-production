@@ -1,0 +1,18 @@
+title: Viral Hook Design
+episode: {{episode_number}}
+context: "{{context}}"
+
+visual_hook:
+  shot_description: "Close up of..."
+  action: "Slap / Crash / Fall"
+  lighting: "High contrast"
+
+narrative_hook:
+  dialogue_line: "I never loved you!"
+  question_posed: "Why is he holding a knife?"
+
+audio_hook:
+  sfx: "Glass breaking"
+  music_cue: "Sudden stop or bass drop"
+
+estimated_retention_score: 9/10

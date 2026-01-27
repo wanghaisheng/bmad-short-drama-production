@@ -1,0 +1,27 @@
+name: Viral Short Drama Creation
+description: End-to-end workflow for creating a high-retention short drama episode.
+steps:
+  - name: Structure & Outline
+    agent: short-drama-structurer
+    command: create-short-drama-outline
+    input:
+      premise: "{{premise}}"
+      genre: "{{genre}}"
+  
+  - name: Inject Conflict
+    agent: conflict-engineer
+    command: enhance-conflict
+    input:
+      scene_list: "{{outline}}"
+  
+  - name: Optimize Hook
+    agent: hook-specialist
+    command: create-hook-script
+    input:
+      episode_start: "{{scene_1}}"
+  
+  - name: Generate Visuals
+    agent: visual-director
+    command: generate-video-prompts
+    input:
+      final_script: "{{script}}"

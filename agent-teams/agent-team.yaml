@@ -1,0 +1,23 @@
+bundle:
+  name: Short Drama Production Team
+  icon: 🎬
+  description: Complete production team for viral short dramas, vertical series, and video content creation
+agents:
+  - short-drama-structurer
+  - conflict-engineer
+  - hook-specialist
+  - visual-director
+  - market-analyst
+  - genre-specialist
+  - beta-reader
+  - cover-designer
+  - plot-architect
+  - character-psychologist
+  - dialog-specialist
+  - editor
+  - world-builder
+workflows:
+  - viral-short-creation
+  - series-structuring
+  - conflict-injection
+  - hook-optimization

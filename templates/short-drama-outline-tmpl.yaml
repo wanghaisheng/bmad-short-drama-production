@@ -1,0 +1,32 @@
+title: Short Drama Series Outline
+genre: "{{genre}}"
+total_episodes: {{total_episodes}}
+premise: "{{premise}}"
+
+macro_structure:
+  setup:
+    episodes: 1-10
+    goal: "Establish characters and primary conflict"
+    key_events:
+      - "Ep 1: The Inciting Incident (Hook)"
+      - "Ep 5: The First Reversal"
+      - "Ep 10: The Point of No Return"
+  rising_action:
+    episodes: 11-50
+    goal: "Escalate conflict and deepen relationships"
+  midpoint:
+    episodes: 51
+    event: "The Major Shift / Truth Revealed"
+  climax:
+    episodes: 80-95
+    goal: "Final Confrontation"
+  resolution:
+    episodes: 96-100
+    goal: "Satisfying Conclusion"
+
+episode_list:
+  - episode: 1
+    title: "The Meeting"
+    hook: "Protagonist is humiliated publicly."
+    conflict: "Villain demands apology."
+    ending_cliffhanger: "Protagonist reveals a secret weapon/identity."

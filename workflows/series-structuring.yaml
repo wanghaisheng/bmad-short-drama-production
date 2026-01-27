@@ -1,0 +1,20 @@
+name: Series Structuring
+description: Create a 100-episode macro structure for a vertical drama.
+steps:
+  - name: Genre Analysis
+    agent: genre-specialist
+    command: suggest-tropes
+    input:
+      genre: "{{genre}}"
+  
+  - name: Macro Outline
+    agent: short-drama-structurer
+    command: create-short-drama-outline
+    input:
+      total_episodes: 100
+  
+  - name: Market Check
+    agent: market-analyst
+    command: pay-point-audit
+    input:
+      outline: "{{outline}}"
