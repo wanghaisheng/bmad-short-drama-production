@@ -1,0 +1,45 @@
+name: Recurring Protagonist Serial
+description: Build a multi-episode vertical short drama with a fixed protagonist and continuity across episodes.
+steps:
+  - name: Define Protagonist
+    agent: character-psychologist
+    command: develop-character
+    input:
+      persona: "{{persona}}"
+      archetype: "{{archetype}}"
+
+  - name: Macro Outline
+    agent: short-drama-structurer
+    command: create-short-drama-outline
+    input:
+      premise: "{{premise}}"
+      genre: "{{genre}}"
+      total_episodes: "{{episodes}}"
+
+  - name: Character Consistency
+    agent: visual-director
+    command: character-consistency
+    input:
+      character_refs: "{{character_refs}}"
+
+  - name: Pilot Conflict
+    agent: conflict-engineer
+    command: enhance-conflict
+    input:
+      scene_text: "{{outline_episode_1}}"
+      intensity_level: "High"
+
+  - name: Pilot Hook
+    agent: hook-specialist
+    command: create-hook-script
+    input:
+      episode_context: "{{pilot_scene}}"
+      visual_style: "{{visual_style}}"
+
+  - name: Pilot Visuals
+    agent: visual-director
+    command: generate-video-prompts
+    input:
+      script_segment: "{{pilot_script}}"
+      visual_style: "{{visual_style}}"
+      character_refs: "{{character_refs}}"

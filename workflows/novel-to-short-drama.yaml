@@ -1,0 +1,48 @@
+name: Novel → Short Drama Adaptation
+description: Adapt a long-form novel into a 60–100 episode vertical short drama with hooks, conflicts, and cliffhangers.
+steps:
+  - name: Decompose Narrative
+    agent: novel-adapter
+    command: segment-novel
+    input:
+      novel_text: "{{novel_text}}"
+      synopsis: "{{synopsis}}"
+
+  - name: Map to Micro-Episodes
+    agent: novel-adapter
+    command: adapt-to-micro-episodes
+    input:
+      scene_list: "{{scene_list}}"
+      target_episodes: 100
+
+  - name: Compress Scenes
+    agent: novel-adapter
+    command: compress-scenes
+    input:
+      episode_outline: "{{episode_outline}}"
+
+  - name: Inject Conflict
+    agent: conflict-engineer
+    command: enhance-conflict
+    input:
+      scene_text: "{{compressed_scene}}"
+      intensity_level: "High"
+
+  - name: Prepare Hook Candidates
+    agent: novel-adapter
+    command: prepare-hook-candidates
+    input:
+      episode_start: "{{episode_start}}"
+
+  - name: Optimize Hook
+    agent: hook-specialist
+    command: create-hook-script
+    input:
+      episode_context: "{{episode_start}}"
+      visual_style: "{{visual_style}}"
+
+  - name: Format Episode Script
+    agent: short-drama-structurer
+    command: generate-outline
+    input:
+      total_episodes: 100

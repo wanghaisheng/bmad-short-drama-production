@@ -1,0 +1,31 @@
+title: Novel → Short Drama Adaptation Plan
+source:
+  novel_title: "{{novel_title}}"
+  author: "{{author}}"
+  synopsis: "{{synopsis}}"
+
+adaptation:
+  target_episodes: 100
+  genre: "{{genre}}"
+  principles:
+    - "Hook first: start in media res"
+    - "Visible conflict: escalate stakes"
+    - "Cliffhanger at episode end"
+    - "Vertical visuals prioritized"
+
+mapping:
+  arcs:
+    - name: "Arc 1"
+      chapters: "1-8"
+      episodes: "1-20"
+      notes: "Introduce core conflict and first reversal"
+  chapter_to_episode:
+    - chapter: 1
+      episodes: [1,2]
+      hook_candidate: "Public humiliation scene"
+      cliffhanger_candidate: "Mystery phone call"
+
+deliverables:
+  episode_outline_file: "episode-outline.yaml"
+  hooks_file: "hook-candidates.yaml"
+  prompts_file: "prompts-episode-1.md"

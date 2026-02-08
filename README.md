@@ -67,6 +67,21 @@ bmad activate hook-specialist
 - **series-structuring** - Planning 80-100 episode arcs with cliffhangers
 - **conflict-injection** - Revamping flat scenes with high drama
 - **hook-optimization** - Maximizing the first 3 seconds for retention
+- **novel-to-short-drama** - Adapt long-form novels into 60–100 vertical episodes
+- **standalone-episode** - Create a self-contained episode with strong hook and payoff
+- **recurring-protagonist-series** - Build a serial with a fixed protagonist and continuity
+
+### CLI Examples
+```bash
+# Novel → Short Drama Adaptation
+bmad run workflow novel-to-short-drama --synopsis "Long-form romance synopsis" --visual-style "cinematic"
+
+# Standalone Episode (single, self-contained)
+bmad run workflow standalone-episode --premise "CEO vs Secretary public showdown" --genre "modern romance" --visual-style "cinematic"
+
+# Recurring Protagonist Series (multi-episode with fixed character)
+bmad run workflow recurring-protagonist-series --premise "revenge arc" --genre "business competition" --episodes 20 --persona "cold CEO" --archetype "anti-hero" --visual-style "high-contrast"
+```
 
 ## 📋 Key Components
 
@@ -97,3 +112,12 @@ bmad activate hook-specialist
 - Pacing analysis and acceleration
 - Conflict intensification for flat scenes
 - Dialogue punching for maximum impact
+
+## 📖 Further Reading
+- Quick Start Guide: [quick-start-guide.md](file:///e:/workspace/bmad-short-drama-production/marketing/en/quick-start-guide.md)
+- CLI Cheatsheet: [cli-cheatsheet.md](file:///e:/workspace/bmad-short-drama-production/marketing/en/cli-cheatsheet.md)
+- Use Cases: [use-cases.md](file:///e:/workspace/bmad-short-drama-production/marketing/en/use-cases.md)
+- FAQ: [faq.md](file:///e:/workspace/bmad-short-drama-production/marketing/en/faq.md)
+- Platform Playbooks: [platform-playbooks.md](file:///e:/workspace/bmad-short-drama-production/marketing/en/platform-playbooks.md)
+- Agent: [novel-adapter.md](file:///e:/workspace/bmad-short-drama-production/agents/novel-adapter.md)
+- Workflows: [novel-to-short-drama.yaml](file:///e:/workspace/bmad-short-drama-production/workflows/novel-to-short-drama.yaml), [standalone-episode.yaml](file:///e:/workspace/bmad-short-drama-production/workflows/standalone-episode.yaml), [recurring-protagonist-series.yaml](file:///e:/workspace/bmad-short-drama-production/workflows/recurring-protagonist-series.yaml)
